@@ -1,12 +1,12 @@
-// Toggle Mobile Menu
+// NAV MENU
 const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("navMenu");
+const navLinks = document.getElementById("navLinks");
 
 hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
+  navLinks.classList.toggle("show");
 });
 
-// Dynamic Year
+// DYNAMIC YEAR
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Form Submit
@@ -16,3 +16,4 @@ contactForm.addEventListener("submit", (e) => {
   alert("Thank you! Your message has been sent.");
   contactForm.reset();
 });
+
