@@ -61,12 +61,11 @@ nav ul li a:hover {
 .hamburger {
   display: none;
   background: none;
-  border: none;
-  font-size: 2rem;
   color: #fff;
+  font-size: 1.8rem;
+  border: none;
   cursor: pointer;
 }
-
 
 /* Hero Section */
 .hero {
@@ -204,4 +203,5 @@ footer {
     flex-direction: column;
   }
 }
+
 
