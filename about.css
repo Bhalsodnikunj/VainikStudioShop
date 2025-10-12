@@ -67,6 +67,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+
 /* Hero Section */
 .hero {
   background: #f4f4f4;
@@ -203,3 +204,4 @@ footer {
     flex-direction: column;
   }
 }
+
