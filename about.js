@@ -1,11 +1,13 @@
-// Toggle Mobile Menu
+// NAV MENU
 const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("navMenu");
+const navLinks = document.getElementById("navLinks");
 
 hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
+  navLinks.classList.toggle("show");
 });
+
 
 // Dynamic Year
 document.getElementById("year").textContent = new Date().getFullYear();
+
 
