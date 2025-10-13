@@ -83,7 +83,7 @@ nav ul li a:hover {
 
 .hero p {
   margin-top: 1rem;
-  color: #000;
+   color: #000;
 }
 
 
@@ -211,3 +211,4 @@ footer {
     flex-direction: column;
   }
 }
+
