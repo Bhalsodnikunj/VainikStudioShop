@@ -13,6 +13,14 @@ document.getElementById("year").textContent = new Date().getFullYear();
 const products = [
   {
     id: 1,
+    title: "Unisex Hoodie - Navy Blue",
+    desc: "Feel the softness in cold of super combed cotton-rich fleece.",
+    price: "₹911",
+    img: "https://stopover-store.b-cdn.net/api/designs/VS___394160/preview.png",
+  },
+
+  {
+    id: 2,
     title: "Coffee Mug - White",
     desc: "Coffee, tea, or art? Have it all with this eye-opening ceramic mug.",
     price: "₹302",
@@ -20,7 +28,7 @@ const products = [
   },
   
   {
-    id: 2,
+    id: 3,
     title: "Throw Pillow - White",
     desc: "Accent cushions with original art, for that instant zhuzh factor in any room.",
     price: "₹362",
