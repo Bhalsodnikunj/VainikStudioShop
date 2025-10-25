@@ -16,7 +16,7 @@ const products = [
     title: "Coffee Mug - Black",
     desc: "Feel the softness in cold of super combed cotton-rich fleece.",
     price: "₹257",
-    img: https://stopover.store/api/alignImage.php?curr_product=Coffee%20Mug&art=designs/VS___193999/68f5e93f7d141.png&color=333333&side=front&onBunny=false",
+    img: "https://stopover.store/api/alignImage.php?curr_product=Coffee%20Mug&art=designs/VS___193999/68f5e93f7d141.png&color=333333&side=front&onBunny=false",
   },
  {
     id: 2,
@@ -99,4 +99,5 @@ document.getElementById("newsletterForm").addEventListener("submit", (e) => {
   alert("Thank you for subscribing!");
   e.target.reset();
 });
+
 
