@@ -13,25 +13,19 @@ document.getElementById("year").textContent = new Date().getFullYear();
 const products = [
   {
     id: 1,
-    title: "Unisex Hoodie - Navy Blue",
-    desc: "Feel the softness in cold of super combed cotton-rich fleece.",
-    price: "₹911",
-    img: "https://stopover-store.b-cdn.net/api/designs/VS___394160/preview.png",
+    title: "Unisex Hoodie - White",
+    img: "<img src="https://stopover.store/api/alignImage.php?curr_product=Full Sleeve Tee&amp;art=designs/VS___193999/68f5e93f7d141.png&amp;color=ffffff&amp;side=front&amp;onBunny=false" style="width: 100%;">",
   },
 
   {
     id: 2,
     title: "Coffee Mug - White",
-    desc: "Coffee, tea, or art? Have it all with this eye-opening ceramic mug.",
-    price: "₹302",
     img: "https://stopover.store/api/alignImage.php?curr_product=Coffee%20Mug&art=designs/VS___847577/68e7b3807cf24.png&color=ffffff&side=front&onBunny=false",
   },
   
   {
     id: 3,
     title: "Throw Pillow - White",
-    desc: "Accent cushions with original art, for that instant zhuzh factor in any room.",
-    price: "₹362",
     img: "https://stopover.store/api/alignImage.php?curr_product=Throw%20Pillow&art=designs/VS___847577/68e7b3807cf24.png&color=ffffff&side=front&onBunny=false",
   },
 
@@ -91,3 +85,4 @@ document.getElementById("newsletterForm").addEventListener("submit", (e) => {
   alert("Thank you for subscribing!");
   e.target.reset();
 });
+
