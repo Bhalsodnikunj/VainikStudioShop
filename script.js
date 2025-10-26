@@ -14,31 +14,23 @@ const products = [
    {
     id: 1,
     title: "Coffee Mug - Black",
-    desc: "Feel the softness in cold of super combed cotton-rich fleece.",
-    price: "₹257",
     img: "https://stopover.store/api/alignImage.php?curr_product=Coffee%20Mug&art=designs/VS___193999/68f5e93f7d141.png&color=333333&side=front&onBunny=false",
   },
  {
     id: 2,
     title: "Unisex Hoodie - Navy Blue",
-    desc: "Feel the softness in cold of super combed cotton-rich fleece.",
-    price: "₹911",
     img: "https://stopover-store.b-cdn.net/api/designs/VS___394160/preview.png",
   },
 
   {
     id: 3,
     title: "Coffee Mug - White",
-    desc: "Coffee, tea, or art? Have it all with this eye-opening ceramic mug.",
-    price: "₹302",
     img: "https://stopover.store/api/alignImage.php?curr_product=Coffee%20Mug&art=designs/VS___847577/68e7b3807cf24.png&color=ffffff&side=front&onBunny=false",
   },
   
   {
     id: 4,
     title: "Throw Pillow - White",
-    desc: "Accent cushions with original art, for that instant zhuzh factor in any room.",
-    price: "₹362",
     img: "https://stopover.store/api/alignImage.php?curr_product=Throw%20Pillow&art=designs/VS___847577/68e7b3807cf24.png&color=ffffff&side=front&onBunny=false",
   },
 
@@ -99,5 +91,6 @@ document.getElementById("newsletterForm").addEventListener("submit", (e) => {
   alert("Thank you for subscribing!");
   e.target.reset();
 });
+
 
 
