@@ -47,8 +47,7 @@ products.forEach((p) => {
     <img src="${p.img}" alt="${p.title}" />
     <div class="product-info">
       <h3>${p.title}</h3>
-      <p>${p.desc}</p>
-      <p class="price">${p.price}</p>
+      
       <button class="btn details-btn" data-id="${p.id}">View Details</button>
     </div>
   `;
@@ -60,8 +59,6 @@ const modal = document.getElementById("productModal");
 const closeModal = document.getElementById("closeModal");
 const modalImg = document.getElementById("modalImg");
 const modalTitle = document.getElementById("modalTitle");
-const modalDesc = document.getElementById("modalDesc");
-const modalPrice = document.getElementById("modalPrice");
 
 document.querySelectorAll(".details-btn").forEach((btn) => {
   btn.addEventListener("click", (e) => {
@@ -70,8 +67,7 @@ document.querySelectorAll(".details-btn").forEach((btn) => {
     if (product) {
       modalImg.src = product.img;
       modalTitle.textContent = product.title;
-      modalDesc.textContent = product.desc;
-      modalPrice.textContent = product.price;
+      
       modal.style.display = "flex";
     }
   });
@@ -91,6 +87,7 @@ document.getElementById("newsletterForm").addEventListener("submit", (e) => {
   alert("Thank you for subscribing!");
   e.target.reset();
 });
+
 
 
 
