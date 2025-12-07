@@ -11,29 +11,23 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 // SAMPLE PRODUCTS
 const products = [
-   {
+  {
     id: 1,
-    title: "Coffee Mug - Black",
-    img: "https://stopover.store/api/alignImage.php?curr_product=Coffee%20Mug&art=designs/VS___193999/68f5e93f7d141.png&color=333333&side=front&onBunny=false",
-  },
- {
-    id: 2,
     title: "Unisex Hoodie - Navy Blue",
+    desc: "Feel the softness in cold of super combed cotton-rich fleece.",
+    price: "₹911",
     img: "https://stopover-store.b-cdn.net/api/designs/VS___394160/preview.png",
   },
 
   {
-    id: 3,
+    id: 2,
     title: "Coffee Mug - White",
+    desc: "Coffee, tea, or art? Have it all with this eye-opening ceramic mug.",
+    price: "₹302",
     img: "https://stopover.store/api/alignImage.php?curr_product=Coffee%20Mug&art=designs/VS___847577/68e7b3807cf24.png&color=ffffff&side=front&onBunny=false",
   },
   
-  {
-    id: 4,
-    title: "Throw Pillow - White",
-    img: "https://stopover.store/api/alignImage.php?curr_product=Throw%20Pillow&art=designs/VS___847577/68e7b3807cf24.png&color=ffffff&side=front&onBunny=false",
-  },
-
+  
 
 ];
 
@@ -47,7 +41,8 @@ products.forEach((p) => {
     <img src="${p.img}" alt="${p.title}" />
     <div class="product-info">
       <h3>${p.title}</h3>
-      
+      <p>${p.desc}</p>
+      <p class="price">${p.price}</p>
       <button class="btn details-btn" data-id="${p.id}">View Details</button>
     </div>
   `;
@@ -59,6 +54,8 @@ const modal = document.getElementById("productModal");
 const closeModal = document.getElementById("closeModal");
 const modalImg = document.getElementById("modalImg");
 const modalTitle = document.getElementById("modalTitle");
+const modalDesc = document.getElementById("modalDesc");
+const modalPrice = document.getElementById("modalPrice");
 
 document.querySelectorAll(".details-btn").forEach((btn) => {
   btn.addEventListener("click", (e) => {
@@ -67,7 +64,8 @@ document.querySelectorAll(".details-btn").forEach((btn) => {
     if (product) {
       modalImg.src = product.img;
       modalTitle.textContent = product.title;
-      
+      modalDesc.textContent = product.desc;
+      modalPrice.textContent = product.price;
       modal.style.display = "flex";
     }
   });
@@ -87,7 +85,3 @@ document.getElementById("newsletterForm").addEventListener("submit", (e) => {
   alert("Thank you for subscribing!");
   e.target.reset();
 });
-
-
-
-
